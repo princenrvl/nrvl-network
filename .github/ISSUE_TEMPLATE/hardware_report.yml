@@ -1,0 +1,57 @@
+name: Hardware test report
+description: Tell us how an integration behaved on your real router, switch or access point
+labels: [hardware-report]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The integrations have so far only been tested against simulated devices, so reports like this decide what gets marked as verified.
+        Only test on a network you administer. Start read-only. **Do not paste secrets.**
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Integration
+      options:
+        - SNMP v2c
+        - Ubiquiti UniFi
+        - OpenWrt
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device model and firmware
+      placeholder: "UniFi Dream Machine Pro, Network 9.1.120"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version or commit
+    validations:
+      required: true
+  - type: checkboxes
+    id: worked
+    attributes:
+      label: What worked
+      options:
+        - label: Connection test and identity (name, model, firmware)
+        - label: Capability table looks right for this device
+        - label: Client list
+        - label: Wired / wireless and attachment (uplink) details
+        - label: Networks
+        - label: Firewall rules (OpenWrt)
+        - label: Interface traffic history (SNMP)
+        - label: Block and unblock a device (OpenWrt)
+        - label: Change and roll back link shaping (OpenWrt SQM)
+        - label: Configuration snapshot (OpenWrt)
+  - type: textarea
+    id: failed
+    attributes:
+      label: What failed or looked wrong
+      description: The exact error text helps most.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything unusual about the setup — renamed firewall zones, a non-root account, multiple sites, VLANs.

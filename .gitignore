@@ -1,0 +1,9 @@
+.build/
+build/
+.swiftpm/
+xcuserdata/
+DerivedData/
+*.xcuserstate
+.DS_Store
+*.dmg
+graphify-out/

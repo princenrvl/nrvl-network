@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest something NRVL Network should do
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation and what is hard about it today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware this depends on, if any
+      description: Many features need a router that documents a way to do them. A link to the vendor's API documentation helps a lot.
+      placeholder: "MikroTik RouterOS 7 REST API — https://…"
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Project rules
+      options:
+        - label: This can be done through documented interfaces, without spoofing, interception or other attack techniques
+          required: true

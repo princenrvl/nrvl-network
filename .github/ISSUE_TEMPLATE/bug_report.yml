@@ -1,0 +1,73 @@
+name: Bug report
+description: Something does not work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Do not paste passwords, API keys, community strings or certificate private keys.**
+        Security problems go through [private reporting](https://github.com/princenrvl/nrvl-network/security/advisories/new), not here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Settings → About, or the commit you built.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac type
+      placeholder: "macOS 15.2, Apple silicon"
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section of the app
+      options:
+        - Overview
+        - Devices
+        - Topology
+        - Networks & Subnets
+        - Traffic Analytics
+        - QoS Manager
+        - Access Control
+        - Firewall
+        - Security Center
+        - Monitoring
+        - Reports
+        - Integrations
+        - Settings
+        - Building or installing
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: integration
+    attributes:
+      label: Integration involved, if any
+      placeholder: "OpenWrt 24.10 on a GL-MT6000"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, error text, or the relevant lines of the audit log. Hide MAC and IP addresses if you prefer.
