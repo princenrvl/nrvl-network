@@ -11,6 +11,7 @@ Discover every device, watch latency and traffic, see what is attached where, an
 [![CI](https://github.com/princenrvl/nrvl-network/actions/workflows/ci.yml/badge.svg)](https://github.com/princenrvl/nrvl-network/actions/workflows/ci.yml)
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
 ![Platform: macOS 14+](https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey.svg)
+[![Download DMG](https://img.shields.io/badge/download-DMG-brightgreen.svg)](https://github.com/princenrvl/nrvl-network/releases/download/v0.1.0/NRVL-Network-0.1.0.dmg)
 ![Swift 6](https://img.shields.io/badge/Swift-6-orange.svg)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
